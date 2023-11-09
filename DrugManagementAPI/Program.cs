@@ -19,7 +19,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseMiddleware<BasicAuthenticationMiddleware>();
+app.UseMiddleware<JWTMiddleware>();
 
 app.UseAuthorization();
 
